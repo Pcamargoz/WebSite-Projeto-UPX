@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Code Breakers - Monitoramento Inteligente de Lixo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1b5e20, #388e3c);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+      position: relative;
+      animation: fadeInLeft 1s ease-in-out;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #2e7d32;
+      margin-top: 5px;
+      animation: grow 1s ease forwards;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: inside square;
+      padding-left: 15px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .group-name {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1.3rem;
+      color: #1b5e20;
+      animation: fadeInUp 1s ease;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    a {
+      color: #c8e6c9;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes grow {
+      from { width: 0; }
+      to { width: 50px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sistema Inteligente de Monitoramento de Lixo</h1>
+    <p>Reduzindo o desperdício e melhorando a eficiência urbana</p>
+  </header>
+
+  <div class="group-name">Projeto desenvolvido pelo Grupo 1 - <strong>The Code Breakers</strong> da UPX</div>
+
+  <main>
+    <section>
+      <h2>Como Funciona</h2>
+      <p>
+        Nosso sistema utiliza sensores ultrassônicos instalados em lixeiras públicas para medir o nível de enchimento dos recipientes. Esses sensores identificam a distância entre o topo da lixeira e o lixo presente. Quando a distância é inferior a 10 cm, considera-se que a lixeira está cheia. Nesse momento, um LED vermelho é acionado e um sinal de alerta é enviado automaticamente para o centro de coleta.
+      </p>
+      <p>
+        Essa automatização permite maior agilidade na coleta de resíduos, evitando transbordamentos e otimizando rotas de coleta. Além disso, os dados coletados podem ser armazenados para análises preditivas e planejamento de estratégias de limpeza urbana.
+      </p>
+      <img src="https://images.unsplash.com/photo-1551739440-ef10c0c5f6b6?auto=format&fit=crop&w=1200&q=80" alt="Sensor em lixeira" />
+      <img src="https://images.unsplash.com/photo-1603126990424-99c43b2b9b98?auto=format&fit=crop&w=1200&q=80" alt="Lixeira urbana com tecnologia" />
+    </section>
+
+    <section>
+      <h2>Tecnologias Utilizadas</h2>
+      <ul>
+        <li>Arduino UNO – microcontrolador central do sistema</li>
+        <li>Sensor Ultrassônico HC-SR04 – mede a distância entre o lixo e o sensor</li>
+        <li>LEDs (vermelho e verde) – sinalização visual de status da lixeira</li>
+        <li>Protoboard e jumpers – montagem dos circuitos eletrônicos</li>
+        <li>Plataforma de simulação: Tinkercad – testes e simulação virtual do sistema</li>
+      </ul>
+      <p>
+        Essas tecnologias permitem criar soluções de baixo custo com grande aplicabilidade no mundo real, demonstrando como a eletrônica pode contribuir com a sustentabilidade.
+      </p>
+      <img src="https://images.unsplash.com/photo-1581579185169-94d8fbcf1d5e?auto=format&fit=crop&w=1200&q=80" alt="Tecnologia sustentável" />
+      <img src="https://images.unsplash.com/photo-1602526219043-dfc44d17fbd7?auto=format&fit=crop&w=1200&q=80" alt="Arduino em funcionamento" />
+    </section>
+
+    <section>
+      <h2>Benefícios Ambientais</h2>
+      <p>
+        A implementação desse projeto proporciona diversos benefícios ambientais diretos e indiretos:
+      </p>
+      <ul>
+        <li>Evita o acúmulo de lixo em vias públicas, promovendo mais higiene urbana</li>
+        <li>Reduz a emissão de gases poluentes ao otimizar as rotas dos caminhões de coleta</li>
+        <li>Contribui para a redução de animais transmissores de doenças, como ratos e baratas</li>
+        <li>Ajuda no uso eficiente dos recursos públicos destinados à limpeza</li>
+        <li>Fomenta a conscientização sobre o descarte correto de resíduos</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1597752604900-073adeb13149?auto=format&fit=crop&w=1200&q=80" alt="Natureza e sustentabilidade" />
+      <img src="https://images.unsplash.com/photo-1560179707-f14e90ef6b23?auto=format&fit=crop&w=1200&q=80" alt="Preservação ambiental com tecnologia" />
+    </section>
+
+    <section>
+      <h2>Aplicação em Cidades Inteligentes</h2>
+      <p>
+        O projeto se alinha aos princípios das cidades inteligentes, integrando dados e automação aos serviços urbanos. A coleta em tempo real permite aos gestores identificar pontos críticos de descarte irregular e avaliar o comportamento dos cidadãos em relação ao uso das lixeiras.
+      </p>
+      <p>
+        Além disso, é possível implementar painéis de controle que centralizam os dados de todas as lixeiras monitoradas, facilitando a tomada de decisão e a elaboração de políticas públicas mais eficazes.
+      </p>
+      <p>
+        A longo prazo, a coleta inteligente de resíduos pode ser integrada a outras soluções, como iluminação pública automatizada, sensores de qualidade do ar e aplicativos para educação ambiental.
+      </p>
+      <img src="https://images.unsplash.com/photo-1581090700227-1e8c9f7f6a33?auto=format&fit=crop&w=1200&q=80" alt="Cidade inteligente e conectada" />
+    </section>
+
+    <section>
+      <h2>Vídeo Explicativo</h2>
+      <p>
+        Assista ao vídeo completo do projeto no YouTube para entender melhor como funciona o sistema e quais impactos ele pode gerar:
+      </p>
+      <p><a href="https://www.youtube.com/watch?v=GEV07l_PZxo&feature=youtu.be" target="_blank">Clique aqui para assistir ao vídeo</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Code Breakers | Projeto UPX - Grupo 1</p>
+  </footer>
+</body>
+</html>
